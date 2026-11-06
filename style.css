@@ -44,16 +44,22 @@ body {
 }
 
 /*About section*/
-.info{
-    gap: 30px;
+.info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
 }
+
 h1 {
     font-weight: 700;
+
 }
 
 h2 {
     color: hsl(75, 94%, 57%);
     font-weight: 600;
+    font-size: 18px;
 }
 
 p {
@@ -62,6 +68,19 @@ p {
 }
 
 /*Link section*/
-.links>ul {
-    list-style: none;
+
+.links>a {
+    text-decoration: none;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 14px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.links > a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
 }
